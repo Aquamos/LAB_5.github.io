@@ -24,7 +24,12 @@ $(document).ready(function() {
     });
     $('.slider__result').text($('#slider').slider("value"));
 
-    $("#gallery").unitegallery();
+    $("#gallery__slider").unitegallery();
+
+    $('#gallery__tiles').unitegallery({
+        gallery_theme: "tiles",
+        tiles_col_width: 95,
+    });
     
     $('.acorn__video').acornMediaPlayer({
         theme: 'darkglass',
